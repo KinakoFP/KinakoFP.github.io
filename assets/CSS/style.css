@@ -650,6 +650,7 @@ tbody {
     color: #fff;
 }
 
+/* === Titres de section === */
 #title-formation,
 #title-pro-annee1,
 #title-pro-annee2 {
@@ -669,6 +670,7 @@ tbody {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  overflow-x: auto; /* pour faire défiler le tableau sur mobile */
 }
 
 /* === Tableaux === */
@@ -677,7 +679,7 @@ tbody {
 #table-pro-annee2 {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 15px;
+  min-width: 800px; /* force le scroll horizontal sur petits écrans */
 }
 
 /* === En-têtes de tableaux === */
@@ -701,19 +703,6 @@ tbody {
 #tbody-pro-annee2 td {
   padding: 10px 8px;
   border-bottom: 1px solid #e1e4e8;
-}
-
-/* === Alternance de lignes === */
-#tbody-formation tr:nth-child(even),
-#tbody-pro-annee1 tr:nth-child(even),
-#tbody-pro-annee2 tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-/* === Mise en forme des "X" === */
-#tbody-formation td,
-#tbody-pro-annee1 td,
-#tbody-pro-annee2 td {
   text-align: center;
 }
 
@@ -724,12 +713,25 @@ tbody {
   font-weight: bold;
 }
 
-/* === Responsive (optionnel) === */
+/* === Alternance de lignes === */
+#tbody-formation tr:nth-child(even),
+#tbody-pro-annee1 tr:nth-child(even),
+#tbody-pro-annee2 tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* === Responsive spécifique : scroll horizontal sur petits écrans === */
 @media (max-width: 768px) {
   #table-formation,
   #table-pro-annee1,
   #table-pro-annee2 {
     font-size: 0.9rem;
+  }
+
+  #section-formation,
+  #section-pro-annee1,
+  #section-pro-annee2 {
+    padding: 10px;
   }
 }
 
