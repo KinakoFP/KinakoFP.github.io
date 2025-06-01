@@ -650,6 +650,89 @@ tbody {
     color: #fff;
 }
 
+#title-formation,
+#title-pro-annee1,
+#title-pro-annee2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  border-left: 5px solid #205e6b;
+  padding-left: 10px;
+}
+
+/* === Sections === */
+#section-formation,
+#section-pro-annee1,
+#section-pro-annee2 {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* === Tableaux === */
+#table-formation,
+#table-pro-annee1,
+#table-pro-annee2 {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+/* === En-têtes de tableaux === */
+#thead-formation tr,
+#thead-pro-annee1 tr,
+#thead-pro-annee2 tr {
+  background-color: #205e6b;
+  color: white;
+}
+
+#thead-formation th,
+#thead-pro-annee1 th,
+#thead-pro-annee2 th {
+  padding: 12px 8px;
+  text-align: left;
+}
+
+/* === Corps de tableaux === */
+#tbody-formation td,
+#tbody-pro-annee1 td,
+#tbody-pro-annee2 td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+/* === Alternance de lignes === */
+#tbody-formation tr:nth-child(even),
+#tbody-pro-annee1 tr:nth-child(even),
+#tbody-pro-annee2 tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* === Mise en forme des "X" === */
+#tbody-formation td,
+#tbody-pro-annee1 td,
+#tbody-pro-annee2 td {
+  text-align: center;
+}
+
+#tbody-formation td:first-child,
+#tbody-pro-annee1 td:first-child,
+#tbody-pro-annee2 td:first-child {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* === Responsive (optionnel) === */
+@media (max-width: 768px) {
+  #table-formation,
+  #table-pro-annee1,
+  #table-pro-annee2 {
+    font-size: 0.9rem;
+  }
+}
+
 .container-project:hover .overlay {
     opacity: 1;
 }
